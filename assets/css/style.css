@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap");
+
+:root {
+  --dark: #2b2d42;
+  --light: #adb5bd;
+  --border: #cbcfd3;
+  --grenn: #06d6a0;
+  --border-btn: rgb(221, 221, 221);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container .logo-add {
+  border-radius: 1em;
+  text-decoration: none;
+}
+
+.container .form-title {
+  margin: auto;
+}
+
+.nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box-nav {
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-beetwen {
+  text-align: left;
+}
+
+.border-shadow {
+  border: 1px solid var(--border-btn);
+  box-shadow: 1px 3px 10px var(--border-btn);
+}
+
+.inline {
+  display: inline-block;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(209, 46, 186, 1) 0%,
+    rgba(37, 121, 9, 1) 46%,
+    rgb(228, 56, 56) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#header nav {
+  background-color: var(--grenn);
+  padding: 1em 0;
+  width: 100%;
+}
+
+#site-main {
+  margin-top: 5em;
+  font-family: "Barlow", sans-serif;
+}
+
+#site-main .container .box-nav > a {
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+#site-main .container form {
+  margin: 2em 0;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  padding: 0.75em;
+  vertical-align: top;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.table td > a.btn {
+  padding: 0.1em 1em;
+  font-size: 1.1em;
+  margin: 0.2em;
+}
+
+.table tr:hover > td {
+  background-color: #06d6a0;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.table td,
+th:hover {
+  cursor: pointer;
+}
+
+.table tr:hover td > a.btn {
+  border: 1px solid rgb(46, 46, 48);
+  transition: 1s;
+}
+
+.table .thead-dark th {
+  color: #fff;
+  background-color: var(--dark);
+  border-top: #38323e;
+}
+
+@media only screen and (max-width: 1024px) {
+  table,
+  thead,
+  tbody,
+  td,
+  tr,
+  th {
+    text-align: left;
+    display: block;
+  }
+
+  thead tr {
+    text-align: left;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    text-align: left;
+    border: 1px solid var(--border);
+  }
+
+  td {
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+/* add user */
+
+a#reload:hover {
+  background-color: violet;
+  transition: 0.5s;
+}
+a#add_user:hover {
+  transition: 0.5s;
+  background-color: violet;
+}
+
+span.spann-insert {
+  font-size: 0.9em;
+  color: rgb(139, 137, 137);
+}
+
+.gajelas {
+  padding-bottom: 10px;
+}
+.gajelas:hover {
+  cursor: pointer;
+}
+
+.form-title {
+  margin: auto;
+  padding-top: 2em;
+}
+
+.form-title h2 {
+  padding: 0.5em 0;
+}
+
+.new_user {
+  max-width: 786px;
+  margin: auto;
+  text-align: left;
+  align-content: center;
+  font-size: 1.2em;
+}
+
+/* #update_user .form-group label,
+#new_user .form-group label {
+text-align: left; */
+
+#update_user .form-group,
+#add_user .form-group {
+  margin: 0.4em;
+}
+
+#update_user .form-group input,
+#add_user .form-group input {
+  width: 100%;
+  padding: 0.6em 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--border);
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  border-radius: 0.2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio {
+  margin: 0.5em 1em;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn {
+  width: 100%;
+  padding: 0.9em 1em;
+  background-color: var(--grenn);
+  border: none;
+  font-family: "Pt Sans", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0.2em;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover {
+  background-color: var(--dark);
+  transition: 0.5s;
+  color: var(--light);
+}
